@@ -1,0 +1,18 @@
+#center {
+  text-align: center;
+  font-weight: bold;
+}
+
+#before,
+#after {
+  color: grey;
+  text-align: center;
+}
+
+.shown {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
