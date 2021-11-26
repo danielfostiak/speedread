@@ -37,20 +37,20 @@ function App() {
           setwordIdx(wordIdx + 1);
           console.log(wordIdx);
           scrollToCenter("center");
-        }, 60000 / wpm) //  + (text.split(" ")[wordIdx].slice(-1) === "." ? wpm / 2 : 0)
+        }, 60000 / wpm + (text.split(" ")[wordIdx].slice(-1) === "." ? wpm / 4 : 0)) //
       );
       // setExtraTime(0);
     }
   }
 
   return (
-    <>
-      <div style={{ marginLeft: "36rem" }}>
+    <div style={{ margin: "0 auto", width: "90vw", marginTop: "1rem" }}>
+      <div style={{ width: "100%", margin: "0 auto", textAlign: "center" }}>
         <Card
           style={{
-            width: "50rem",
+            // width: "50rem",
             fontSize: "2rem",
-            height: "50rem",
+            height: "80vh",
             overflowX: "hidden",
             overflowY: "auto",
           }}
@@ -132,7 +132,7 @@ function App() {
         onChange={(e) => setWpm(e.target.value)}
       />
       {/* <Button onClick={() => scrollToCenter(4)}>Go to and</Button> */}
-    </>
+    </div>
   );
 }
 
