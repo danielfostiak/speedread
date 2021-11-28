@@ -14,7 +14,7 @@
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 0.15s;
+  animation-duration: 0.2s;
 }
 
 @keyframes fadeInOpacity {
@@ -26,19 +26,20 @@
   }
 }
 
-@keyframes fadeOutOpacity {
+/* @keyframes fadeOutOpacity {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}
+} */
 
 .hidden {
   opacity: 0;
-  animation-name: fadeOutOpacity;
+  visibility: hidden;
+  /* animation-name: fadeOutOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 0.15s;
+  animation-duration: 0.15s; */
 }
